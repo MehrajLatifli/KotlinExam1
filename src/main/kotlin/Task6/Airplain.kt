@@ -1,18 +1,18 @@
 package Task6
 
-class Airplain(var motorsayı:Int):IMotorsvehicle {
+class Airplain(var motorquantity:Int):IMotorsvehicle {
 
-    override fun sürətləndirmə() {
+    override fun spedUp() {
 
-        println("Car sürətləndirmə")
+        println("Airplain spedUp")
     }
 
-    override fun dayandırma() {
-        println("Car dayandırma")
+    override fun stop() {
+        println("Airplain stop")
     }
 
-    fun motorsayı()
+    fun motorQuantity()
     {
-        println("Car motorsayı ${motorsayı}")
+        println("Airplain engine quantity is ${motorquantity}")
     }
 }

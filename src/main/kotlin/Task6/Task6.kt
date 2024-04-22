@@ -3,15 +3,15 @@ package Task6
 fun main() {
 
     var car = Car(4)
-    var airplain = Airplain(4)
+    var airplain = Airplain(5)
 
-    car.sürətləndirmə()
-    car.dayandırma()
+    car.spedUp()
+    car.stop()
 
-    airplain.sürətləndirmə()
-    airplain.dayandırma()
+    airplain.spedUp()
+    airplain.stop()
 
-    car.oturacaqsayı()
-    airplain.motorsayı()
+    car.seatQuantity()
+    airplain.motorQuantity()
 
 }

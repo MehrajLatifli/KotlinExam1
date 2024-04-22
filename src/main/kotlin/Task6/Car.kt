@@ -1,17 +1,17 @@
 package Task6
 
-class Car(var oturacaqsayi:Int):IMotorsvehicle {
-    override fun sürətləndirmə() {
+class Car(var seatquantity:Int):IMotorsvehicle {
+    override fun spedUp() {
 
-        println("Car sürətləndirmə")
+        println("Car spedUp")
     }
 
-    override fun dayandırma() {
-        println("Car dayandırma")
+    override fun stop() {
+        println("Car stop")
     }
 
-    fun oturacaqsayı()
+    fun seatQuantity()
     {
-        println("Car oturacaqsayı ${oturacaqsayi}")
+        println("Car seat quantity is ${seatquantity}")
     }
 }
