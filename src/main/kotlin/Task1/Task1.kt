@@ -24,18 +24,18 @@ fun main() {
     println("Composite numbers between $first and $last: $complexes")
 }
 
-fun isPrime(num: Int): Boolean {
-    if (num <= 1) return false
-    for (i in 2..(num / 2)) {
-        if (num % i == 0) return false
+fun isPrime(number: Int): Boolean {
+    if (number <= 1) return false
+    for (i in 2..(number / 2)) {
+        if (number % i == 0) return false
     }
     return true
 }
 
-fun isComposite(num: Int): Boolean {
-    if (num <= 1) return false
-    for (i in 2..(num / 2)) {
-        if (num % i == 0) return true
+fun isComposite(number: Int): Boolean {
+    if (number <= 1) return false
+    for (i in 2..(number / 2)) {
+        if (number % i == 0) return true
     }
     return false
 }
