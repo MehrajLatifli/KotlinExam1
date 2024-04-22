@@ -1,11 +1,30 @@
 package Task5
 
 fun main() {
+    val array = arrayListOf<Int>(1, 2, 3, 2, 5, 2, 44)
 
-    var array = hashSetOf<Int>(1,2,3,2,5)
+    print("\nArray elements: ")
+    for ((index, item) in array.withIndex()) {
+        print(item.toString()+" ")
+    }
 
-    for((index,item) in array.withIndex()){
+    print("\nRepeated numbers and their counts: ")
+    val countMap = hashMapOf<Int, Int>()
+    for (item in array) {
+        countMap[item] = countMap.getOrDefault(item, 0) + 1
+    }
 
-            println(item)
+    for ((number, count) in countMap) {
+        if (count > 1) {
+            print("$number - $count times")
+        }
+    }
+
+    val printedSet = hashSetOf<Int>()
+    print("\nArray elements without repeats: ")
+    for ((index, item) in array.withIndex()) {
+        if (printedSet.add(item)) {
+            print(item.toString() + " ")
+        }
     }
 }
