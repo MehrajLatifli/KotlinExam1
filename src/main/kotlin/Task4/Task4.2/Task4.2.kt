@@ -2,7 +2,7 @@ package Task4.Task4.`2`
 
 import java.util.*
 
-fun main() {
+fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
 
     print("Enter first: ")

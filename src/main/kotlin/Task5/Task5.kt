@@ -1,6 +1,6 @@
 package Task5
 
-fun main() {
+fun main(args: Array<String>) {
     val array = arrayListOf<Int>(1, 4, 4, 2, 5, 2, 4,18,29)
 
     print("\nArray elements: ")

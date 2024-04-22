@@ -1,7 +1,7 @@
 import java.util.*
 import kotlin.collections.ArrayList
 
-fun main() {
+fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
 
     print("Enter first: ")
